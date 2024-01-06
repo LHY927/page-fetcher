@@ -7,7 +7,7 @@ const fetcher = function (URL, path){
         fs.writeFile(path, body, function (err) {
             if (err)
                 throw err;               
-            console.log('Results Received');
+            console.log('Downloaded and saved ' + body.length + ' bytes to ' + path);
         }); 
     });
 }
